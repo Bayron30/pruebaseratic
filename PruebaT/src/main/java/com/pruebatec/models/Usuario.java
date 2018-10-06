@@ -3,13 +3,13 @@ package com.pruebatec.models;
 
 public class Usuario {
     
-    private int idusuario; 
+    private String idusuario; 
     private String nombre, apellido, usuario, contrasena, tipo, fechaRegistro;
 
     public Usuario() {
     }
 
-    public Usuario(int idusuario, String nombre, String apellido, String usuario, String contrasena, String tipo, String fechaRegistro) {
+    public Usuario(String idusuario, String nombre, String apellido, String usuario, String contrasena, String tipo, String fechaRegistro) {
         this.idusuario = idusuario;
         this.nombre = nombre;
         this.apellido = apellido;
@@ -19,11 +19,15 @@ public class Usuario {
         this.fechaRegistro = fechaRegistro;
     }
 
-    public int getIdusuario() {
+    public Usuario(String id, String nombre, String usuario, String desencriptado, String tipo, String fechaRegistro) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getIdusuario() {
         return idusuario;
     }
 
-    public void setIdusuario(int idusuario) {
+    public void setIdusuario(String idusuario) {
         this.idusuario = idusuario;
     }
 

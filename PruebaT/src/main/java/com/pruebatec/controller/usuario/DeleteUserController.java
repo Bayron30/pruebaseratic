@@ -5,10 +5,7 @@
  */
 package com.pruebatec.controller.usuario;
 
-/**
- *
- * @author Bayron
- */
-public class UsuarioController {
+
+public class DeleteUserController {
     
 }

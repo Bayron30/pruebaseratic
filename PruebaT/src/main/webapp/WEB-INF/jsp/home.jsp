@@ -25,12 +25,9 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <nav class="grey darken-3 big">
-	    <div class="nav-wrapper">
-                <p class="center">SERATIC</p>
-		    <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-	
-            </div>  
+    <nav id="nav1" class="nav-extended grey darken-3" role="navigation">
+            <div class="nav-wrapper container">
+              <a id="logo-container" href="home.htm" class="brand-logo">Seratic</a>  
     </nav>
 
         <div class="row">
@@ -45,21 +42,21 @@
 
 	<!-- Grid de promoción -->
 	<div class="col xl4 l4 m12 12">
-    	<div class="card-panel center promo blue-grey darken-3 white-text">
+    	<div class="card-panel center promo blue-grey darken-3 white-text" onclick="location.href='user.htm'">
             <i class="material-icons">group</i>
             <p class="promo-caption">Usuario</p>
             <p class="light center">Permite realizar la gestion de todos los usuarios</p>
         </div>
         </div>  
     <div class="col xl4 l4 m12 12">
-    	<div class="card-panel center promo blue-grey darken-3 white-text">
+    	<div class="card-panel center promo blue-grey darken-3 white-text" onclick="location.href='aspirante.htm'">
             <i class="material-icons">group</i>
             <p class="promo-caption">Aspirantes</p>
             <p class="light center">Permite realizar la gestion de todos los aspirantes</p>
         </div>
     </div>
     <div class="col xl4 l4 m12 12">
-    	<div class="card-panel center promo blue-grey darken-3 white-text">
+    	<div class="card-panel center promo blue-grey darken-3 white-text" onclick="location.href='prueba.htm'">
             <i class="material-icons">settings</i>
             <p class="promo-caption">Pruebas</p>
             <p class="light center">Permite realizar la gestion de todos las pruebas</p>

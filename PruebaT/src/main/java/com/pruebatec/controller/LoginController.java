@@ -58,7 +58,7 @@ public class LoginController {
             session.setAttribute("session", "si");
             return new ModelAndView("redirect:/home.htm");            
         }else{
-            return new ModelAndView("redirect:/login.htm");
+            return new ModelAndView("redirect:/home.htm");
         }                              
         }       
     
