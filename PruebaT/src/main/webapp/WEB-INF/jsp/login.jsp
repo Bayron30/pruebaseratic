@@ -16,20 +16,24 @@
         <title>Seratic</title>
     </head>
     <body>
-        <nav class="white" role="navigation"><!--Barra Principal-->
+        <nav class="grey darken-3" role="navigation"><!--Barra Principal-->
             <div class="nav-wrapper container">
-            <a id="logo-container" href="login.htm" class="brand-logo">Seratic</a><!--lOGO-->                            
+            <a id="logo-container" href="login.htm" class="brand-logo white-text">SERATIC</a><!--lOGO-->                            
             </div>
         </nav>
-
-          <div class="section"></div>
+        
+        <div class="section" ></div>
           <main id="container">
-            <center>                       
+             <div class="center-align">
+            <div class="row "  > 
+                
+            <div class="col x14 14 m12 12">   
+               
                 <br/>
                 <br/>
                 <div class="container" >
                 <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 30px 68px 0px 68px; border: 1px solid #EEE;">
-                    <h5 class="indigo-text">Ingrese a su cuenta</h5>
+                    <h5 class="indigo-text">Ingrese a su cuenta de Usuario</h5>
                     <form:form method="post" modelAttribute="usuario">
                   
                         <div class='row'>
@@ -47,24 +51,39 @@
                         <div class='row'>
                           <div class='input-field col s12'>
                             <i class="material-icons prefix" Style="margin-top: 10px">lock_outline</i>
-                            <form:label for="icon_prefix1" path="clave">Contraseña</form:label>
-                            <form:input type="password" id="icon_prefix1"  class="validate" required="true" aria-required="true" path="clave" />
+                            <form:label for="icon_prefix1" path="contrasena">Contraseña</form:label>
+                            <form:input type="password" id="icon_prefix1"  class="validate" required="true" aria-required="true" path="contrasena" />
                             
                           </div>
                         </div>
                         <br/>
                         <center>
                           <div class='row'>
-                            <button type="submit" value="Enviar" name="submit" class='col s12 btn btn-large waves-effect indigo'>Login</button> 
+                            <button type="submit" value="Enviar" name="submit" class='col s12 btn btn-large waves-effect'  style="background-color: darkblue">Login</button> 
+                          </div>
+                        </center>
+                        <br/>
+                        <center>
+                          <div class='row'>
+                            <button type="submit" value="Enviar" name="submit" class='col s12 btn waves-effect' style="background-color:lightslategray">Rrgístrate</button> 
+                          </div>
+                        </center>
+                        <center>
+                          <div class='row'>
+                            <button type="submit" value="Enviar" name="submit" class='col s12 btn waves-effect' style="background-color: darkolivegreen">Consultas de Aspirante</button> 
                           </div>
                         </center>
                         <form:errors path="*" element="div" cssClass="alert alert-danger"></form:errors>
                    </form:form>    
                 </div>
               </div>
-              <br/>             
-            </center>
-
+              <br/> 
+            </div>
+            
+              
+            </div>
+            </div>
+             </div>
 
 
           </main>
